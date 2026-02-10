@@ -1,0 +1,1065 @@
+Running sender_reno.py for 10 iterations...
+
+=== Iteration 1 of 10 ===
+Error response from daemon: No such container: ecs152a-simulator
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 666B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:latest
+#2 DONE 0.9s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 107B done
+#4 DONE 0.0s
+
+#5 [1/8] FROM docker.io/library/python:latest@sha256:1c4c033d666001d84b5c4d85280af2c5a21a4ea1eb86c2fc06e3ef2f33fa6776
+#5 resolve docker.io/library/python:latest@sha256:1c4c033d666001d84b5c4d85280af2c5a21a4ea1eb86c2fc06e3ef2f33fa6776 0.0s done
+#5 DONE 0.0s
+
+#6 [2/8] RUN apt update
+#6 CACHED
+
+#7 [3/8] RUN apt install -y iproute2
+#7 CACHED
+
+#8 [5/8] WORKDIR /app
+#8 CACHED
+
+#9 [6/8] COPY training_profile.sh ./
+#9 CACHED
+
+#10 [7/8] COPY docker-script.sh ./
+#10 CACHED
+
+#11 [4/8] RUN apt install -y bc
+#11 CACHED
+
+#12 [8/8] COPY receiver.py ./
+#12 CACHED
+
+#13 exporting to image
+#13 exporting layers done
+#13 exporting manifest sha256:9568bf0c4e8168c62d2ddcc215f9431a8ed016e496b638406dc50947ca89526e done
+#13 exporting config sha256:eafffdc7d97d105ed4facfa3a3faf6143c00ba4fcafbc37823abd0363eacef94 done
+#13 exporting attestation manifest sha256:33717953e06ad3d4e14387243f0997b00f4a4c5700c7122b10bb7318575f78b1 done
+#13 exporting manifest list sha256:132e19060f6f665aa50734e22641fe98904d16a8c047058e00f23d56bd5e8b8f done
+#13 naming to docker.io/ecs152a/simulator:latest done
+#13 unpacking to docker.io/ecs152a/simulator:latest done
+#13 DONE 0.1s
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Receiver running
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+  Throughput: 95984.0049183
+  Delay: 0.4374668
+
+=== Iteration 2 of 10 ===
+Error response from daemon: No such container: ecs152a-simulator
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 666B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:latest
+#2 DONE 0.4s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 107B done
+#4 DONE 0.0s
+
+#5 [1/8] FROM docker.io/library/python:latest@sha256:1c4c033d666001d84b5c4d85280af2c5a21a4ea1eb86c2fc06e3ef2f33fa6776
+#5 resolve docker.io/library/python:latest@sha256:1c4c033d666001d84b5c4d85280af2c5a21a4ea1eb86c2fc06e3ef2f33fa6776 0.0s done
+#5 DONE 0.0s
+
+#6 [6/8] COPY training_profile.sh ./
+#6 CACHED
+
+#7 [2/8] RUN apt update
+#7 CACHED
+
+#8 [5/8] WORKDIR /app
+#8 CACHED
+
+#9 [3/8] RUN apt install -y iproute2
+#9 CACHED
+
+#10 [4/8] RUN apt install -y bc
+#10 CACHED
+
+#11 [7/8] COPY docker-script.sh ./
+#11 CACHED
+
+#12 [8/8] COPY receiver.py ./
+#12 CACHED
+
+#13 exporting to image
+#13 exporting layers done
+#13 exporting manifest sha256:9568bf0c4e8168c62d2ddcc215f9431a8ed016e496b638406dc50947ca89526e done
+#13 exporting config sha256:eafffdc7d97d105ed4facfa3a3faf6143c00ba4fcafbc37823abd0363eacef94 done
+#13 exporting attestation manifest sha256:a1d863f10986fdc2384acbb49e1f5bdab02aa0cc7e766c3d69ade97b62181a95 done
+#13 exporting manifest list sha256:292c45eb1e657feae571ae79705d6917c9bc5051ab7b0a9710552b80c1d4a3eb done
+#13 naming to docker.io/ecs152a/simulator:latest done
+#13 unpacking to docker.io/ecs152a/simulator:latest done
+#13 DONE 0.0s
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Receiver running
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+  Throughput: 93088.4307656
+  Delay: 0.8054448
+
+=== Iteration 3 of 10 ===
+Error response from daemon: No such container: ecs152a-simulator
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 666B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:latest
+#2 DONE 0.6s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 107B done
+#4 DONE 0.0s
+
+#5 [1/8] FROM docker.io/library/python:latest@sha256:1c4c033d666001d84b5c4d85280af2c5a21a4ea1eb86c2fc06e3ef2f33fa6776
+#5 resolve docker.io/library/python:latest@sha256:1c4c033d666001d84b5c4d85280af2c5a21a4ea1eb86c2fc06e3ef2f33fa6776 0.0s done
+#5 DONE 0.0s
+
+#6 [6/8] COPY training_profile.sh ./
+#6 CACHED
+
+#7 [3/8] RUN apt install -y iproute2
+#7 CACHED
+
+#8 [4/8] RUN apt install -y bc
+#8 CACHED
+
+#9 [5/8] WORKDIR /app
+#9 CACHED
+
+#10 [7/8] COPY docker-script.sh ./
+#10 CACHED
+
+#11 [2/8] RUN apt update
+#11 CACHED
+
+#12 [8/8] COPY receiver.py ./
+#12 CACHED
+
+#13 exporting to image
+#13 exporting layers done
+#13 exporting manifest sha256:9568bf0c4e8168c62d2ddcc215f9431a8ed016e496b638406dc50947ca89526e done
+#13 exporting config sha256:eafffdc7d97d105ed4facfa3a3faf6143c00ba4fcafbc37823abd0363eacef94 done
+#13 exporting attestation manifest sha256:c469d26da9fbc8c8e20da854bd8e72b1eed02320361463433e776423ce938c2b done
+#13 exporting manifest list sha256:a499deacdc17b3efef7ea433d320c746809e26c1082ac27c0901e9401e5eb1d4 done
+#13 naming to docker.io/ecs152a/simulator:latest done
+#13 unpacking to docker.io/ecs152a/simulator:latest done
+#13 DONE 0.0s
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Receiver running
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+  Throughput: 92572.9642363
+  Delay: 0.7335855
+
+=== Iteration 4 of 10 ===
+Error response from daemon: No such container: ecs152a-simulator
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 666B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:latest
+#2 DONE 0.4s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 107B done
+#4 DONE 0.0s
+
+#5 [1/8] FROM docker.io/library/python:latest@sha256:1c4c033d666001d84b5c4d85280af2c5a21a4ea1eb86c2fc06e3ef2f33fa6776
+#5 resolve docker.io/library/python:latest@sha256:1c4c033d666001d84b5c4d85280af2c5a21a4ea1eb86c2fc06e3ef2f33fa6776 0.0s done
+#5 DONE 0.0s
+
+#6 [3/8] RUN apt install -y iproute2
+#6 CACHED
+
+#7 [4/8] RUN apt install -y bc
+#7 CACHED
+
+#8 [5/8] WORKDIR /app
+#8 CACHED
+
+#9 [6/8] COPY training_profile.sh ./
+#9 CACHED
+
+#10 [7/8] COPY docker-script.sh ./
+#10 CACHED
+
+#11 [2/8] RUN apt update
+#11 CACHED
+
+#12 [8/8] COPY receiver.py ./
+#12 CACHED
+
+#13 exporting to image
+#13 exporting layers done
+#13 exporting manifest sha256:9568bf0c4e8168c62d2ddcc215f9431a8ed016e496b638406dc50947ca89526e done
+#13 exporting config sha256:eafffdc7d97d105ed4facfa3a3faf6143c00ba4fcafbc37823abd0363eacef94 done
+#13 exporting attestation manifest sha256:3428288364f42f10ef2e2b48eb58ce553c3671ed6641614937b0da9cfb8e9338 done
+#13 exporting manifest list sha256:244a37eba865a7233d6e488b055c1e3627be4274a78e2b7b5f1610032944499e done
+#13 naming to docker.io/ecs152a/simulator:latest done
+#13 unpacking to docker.io/ecs152a/simulator:latest done
+#13 DONE 0.0s
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Receiver running
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+  Throughput: 80472.2353458
+  Delay: 0.5910531
+
+=== Iteration 5 of 10 ===
+Error response from daemon: No such container: ecs152a-simulator
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 666B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:latest
+#2 DONE 0.5s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 107B done
+#4 DONE 0.0s
+
+#5 [1/8] FROM docker.io/library/python:latest@sha256:1c4c033d666001d84b5c4d85280af2c5a21a4ea1eb86c2fc06e3ef2f33fa6776
+#5 resolve docker.io/library/python:latest@sha256:1c4c033d666001d84b5c4d85280af2c5a21a4ea1eb86c2fc06e3ef2f33fa6776 0.0s done
+#5 DONE 0.0s
+
+#6 [7/8] COPY docker-script.sh ./
+#6 CACHED
+
+#7 [4/8] RUN apt install -y bc
+#7 CACHED
+
+#8 [3/8] RUN apt install -y iproute2
+#8 CACHED
+
+#9 [6/8] COPY training_profile.sh ./
+#9 CACHED
+
+#10 [2/8] RUN apt update
+#10 CACHED
+
+#11 [5/8] WORKDIR /app
+#11 CACHED
+
+#12 [8/8] COPY receiver.py ./
+#12 CACHED
+
+#13 exporting to image
+#13 exporting layers done
+#13 exporting manifest sha256:9568bf0c4e8168c62d2ddcc215f9431a8ed016e496b638406dc50947ca89526e done
+#13 exporting config sha256:eafffdc7d97d105ed4facfa3a3faf6143c00ba4fcafbc37823abd0363eacef94 done
+#13 exporting attestation manifest sha256:66da9c37e9b44282d88f7cc7670eba01e11b0fac16096aebad867752f64c9c5a done
+#13 exporting manifest list sha256:4004c3916a322c28c7dd4a54b9069c8c69a66cc39cb68dd894a3c41aaff7203d done
+#13 naming to docker.io/ecs152a/simulator:latest done
+#13 unpacking to docker.io/ecs152a/simulator:latest done
+#13 DONE 0.0s
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Receiver running
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+  Throughput: 90704.5924230
+  Delay: 0.8169255
+
+=== Iteration 6 of 10 ===
+Error response from daemon: No such container: ecs152a-simulator
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 666B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:latest
+#2 DONE 3.8s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 107B done
+#4 DONE 0.0s
+
+#5 [1/8] FROM docker.io/library/python:latest@sha256:1c4c033d666001d84b5c4d85280af2c5a21a4ea1eb86c2fc06e3ef2f33fa6776
+#5 resolve docker.io/library/python:latest@sha256:1c4c033d666001d84b5c4d85280af2c5a21a4ea1eb86c2fc06e3ef2f33fa6776 0.0s done
+#5 DONE 0.0s
+
+#6 [7/8] COPY docker-script.sh ./
+#6 CACHED
+
+#7 [4/8] RUN apt install -y bc
+#7 CACHED
+
+#8 [5/8] WORKDIR /app
+#8 CACHED
+
+#9 [2/8] RUN apt update
+#9 CACHED
+
+#10 [3/8] RUN apt install -y iproute2
+#10 CACHED
+
+#11 [6/8] COPY training_profile.sh ./
+#11 CACHED
+
+#12 [8/8] COPY receiver.py ./
+#12 CACHED
+
+#13 exporting to image
+#13 exporting layers done
+#13 exporting manifest sha256:9568bf0c4e8168c62d2ddcc215f9431a8ed016e496b638406dc50947ca89526e done
+#13 exporting config sha256:eafffdc7d97d105ed4facfa3a3faf6143c00ba4fcafbc37823abd0363eacef94 done
+#13 exporting attestation manifest sha256:936cddbf155d70f5b357eb21ad85a277e5f24097ffc1b8ff496599a8e29825a4 done
+#13 exporting manifest list sha256:7d1bdaaceb28ae5014c47370a4b6dfc2a93f27d7ff6f5280c1faae2d3f212df0 done
+#13 naming to docker.io/ecs152a/simulator:latest done
+#13 unpacking to docker.io/ecs152a/simulator:latest done
+#13 DONE 0.1s
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Receiver running
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+  Throughput: 84420.9330266
+  Delay: 0.3284899
+
+=== Iteration 7 of 10 ===
+Error response from daemon: No such container: ecs152a-simulator
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 666B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:latest
+#2 DONE 0.5s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 107B done
+#4 DONE 0.0s
+
+#5 [1/8] FROM docker.io/library/python:latest@sha256:1c4c033d666001d84b5c4d85280af2c5a21a4ea1eb86c2fc06e3ef2f33fa6776
+#5 resolve docker.io/library/python:latest@sha256:1c4c033d666001d84b5c4d85280af2c5a21a4ea1eb86c2fc06e3ef2f33fa6776 0.0s done
+#5 DONE 0.0s
+
+#6 [4/8] RUN apt install -y bc
+#6 CACHED
+
+#7 [7/8] COPY docker-script.sh ./
+#7 CACHED
+
+#8 [2/8] RUN apt update
+#8 CACHED
+
+#9 [5/8] WORKDIR /app
+#9 CACHED
+
+#10 [6/8] COPY training_profile.sh ./
+#10 CACHED
+
+#11 [3/8] RUN apt install -y iproute2
+#11 CACHED
+
+#12 [8/8] COPY receiver.py ./
+#12 CACHED
+
+#13 exporting to image
+#13 exporting layers done
+#13 exporting manifest sha256:9568bf0c4e8168c62d2ddcc215f9431a8ed016e496b638406dc50947ca89526e done
+#13 exporting config sha256:eafffdc7d97d105ed4facfa3a3faf6143c00ba4fcafbc37823abd0363eacef94 done
+#13 exporting attestation manifest sha256:173c456eccab8c6f6d5187ab885fcf047d684fe68a7c0449e3e30af5d8107690 done
+#13 exporting manifest list sha256:69bb91f638cf4080c250f6dd67de7d6cb01c8fcfad7aaee4d0d6ca939833d67b done
+#13 naming to docker.io/ecs152a/simulator:latest done
+#13 unpacking to docker.io/ecs152a/simulator:latest done
+#13 DONE 0.0s
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Receiver running
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+  Throughput: 91032.5065135
+  Delay: 0.5524663
+
+=== Iteration 8 of 10 ===
+Error response from daemon: No such container: ecs152a-simulator
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 666B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:latest
+#2 DONE 0.5s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 107B done
+#4 DONE 0.0s
+
+#5 [1/8] FROM docker.io/library/python:latest@sha256:1c4c033d666001d84b5c4d85280af2c5a21a4ea1eb86c2fc06e3ef2f33fa6776
+#5 resolve docker.io/library/python:latest@sha256:1c4c033d666001d84b5c4d85280af2c5a21a4ea1eb86c2fc06e3ef2f33fa6776 0.0s done
+#5 DONE 0.0s
+
+#6 [4/8] RUN apt install -y bc
+#6 CACHED
+
+#7 [6/8] COPY training_profile.sh ./
+#7 CACHED
+
+#8 [3/8] RUN apt install -y iproute2
+#8 CACHED
+
+#9 [7/8] COPY docker-script.sh ./
+#9 CACHED
+
+#10 [2/8] RUN apt update
+#10 CACHED
+
+#11 [5/8] WORKDIR /app
+#11 CACHED
+
+#12 [8/8] COPY receiver.py ./
+#12 CACHED
+
+#13 exporting to image
+#13 exporting layers done
+#13 exporting manifest sha256:9568bf0c4e8168c62d2ddcc215f9431a8ed016e496b638406dc50947ca89526e done
+#13 exporting config sha256:eafffdc7d97d105ed4facfa3a3faf6143c00ba4fcafbc37823abd0363eacef94 done
+#13 exporting attestation manifest sha256:44ef28973c70411bfd61d49362a03be042ba0ada4c9210141b6a0c4524e4c4c9 0.0s done
+#13 exporting manifest list sha256:0ceb752b2c74b1f7f02f10d1f52a6889c514b6fc0c91746699d7567f77b43daf done
+#13 naming to docker.io/ecs152a/simulator:latest done
+#13 unpacking to docker.io/ecs152a/simulator:latest 0.0s done
+#13 DONE 0.1s
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Receiver running
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+  Throughput: 92189.6444531
+  Delay: 0.5424035
+
+=== Iteration 9 of 10 ===
+Error response from daemon: No such container: ecs152a-simulator
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 666B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:latest
+#2 DONE 0.4s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 107B done
+#4 DONE 0.0s
+
+#5 [1/8] FROM docker.io/library/python:latest@sha256:1c4c033d666001d84b5c4d85280af2c5a21a4ea1eb86c2fc06e3ef2f33fa6776
+#5 resolve docker.io/library/python:latest@sha256:1c4c033d666001d84b5c4d85280af2c5a21a4ea1eb86c2fc06e3ef2f33fa6776 done
+#5 DONE 0.0s
+
+#6 [7/8] COPY docker-script.sh ./
+#6 CACHED
+
+#7 [3/8] RUN apt install -y iproute2
+#7 CACHED
+
+#8 [6/8] COPY training_profile.sh ./
+#8 CACHED
+
+#9 [2/8] RUN apt update
+#9 CACHED
+
+#10 [5/8] WORKDIR /app
+#10 CACHED
+
+#11 [4/8] RUN apt install -y bc
+#11 CACHED
+
+#12 [8/8] COPY receiver.py ./
+#12 CACHED
+
+#13 exporting to image
+#13 exporting layers done
+#13 exporting manifest sha256:9568bf0c4e8168c62d2ddcc215f9431a8ed016e496b638406dc50947ca89526e done
+#13 exporting config sha256:eafffdc7d97d105ed4facfa3a3faf6143c00ba4fcafbc37823abd0363eacef94 done
+#13 exporting attestation manifest sha256:7bb272d7f3dd30b1a388427362830676ff17c6d9a97fc51154519708d01b3fdc done
+#13 exporting manifest list sha256:b7c58b7a584eb8e9876c07898377bf9e8b1a6cb4dad8d78a62be5e3fc75602e2 done
+#13 naming to docker.io/ecs152a/simulator:latest done
+#13 unpacking to docker.io/ecs152a/simulator:latest done
+#13 DONE 0.0s
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Receiver running
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+  Throughput: 91610.5155210
+  Delay: 0.6242954
+
+=== Iteration 10 of 10 ===
+Error response from daemon: No such container: ecs152a-simulator
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 666B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:latest
+#2 DONE 0.5s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 107B done
+#4 DONE 0.0s
+
+#5 [1/8] FROM docker.io/library/python:latest@sha256:1c4c033d666001d84b5c4d85280af2c5a21a4ea1eb86c2fc06e3ef2f33fa6776
+#5 resolve docker.io/library/python:latest@sha256:1c4c033d666001d84b5c4d85280af2c5a21a4ea1eb86c2fc06e3ef2f33fa6776 0.0s done
+#5 DONE 0.0s
+
+#6 [7/8] COPY docker-script.sh ./
+#6 CACHED
+
+#7 [6/8] COPY training_profile.sh ./
+#7 CACHED
+
+#8 [4/8] RUN apt install -y bc
+#8 CACHED
+
+#9 [5/8] WORKDIR /app
+#9 CACHED
+
+#10 [2/8] RUN apt update
+#10 CACHED
+
+#11 [3/8] RUN apt install -y iproute2
+#11 CACHED
+
+#12 [8/8] COPY receiver.py ./
+#12 CACHED
+
+#13 exporting to image
+#13 exporting layers done
+#13 exporting manifest sha256:9568bf0c4e8168c62d2ddcc215f9431a8ed016e496b638406dc50947ca89526e done
+#13 exporting config sha256:eafffdc7d97d105ed4facfa3a3faf6143c00ba4fcafbc37823abd0363eacef94 done
+#13 exporting attestation manifest sha256:a9e749fef2a901a01fdbb374a3585a0ac9994cb706179a1a4e15a15c66f33279 done
+#13 exporting manifest list sha256:bd7634373e21aa214d5375145abaa4c32dd741a10e8602fdf9c25f0feb406e41 done
+#13 naming to docker.io/ecs152a/simulator:latest done
+#13 unpacking to docker.io/ecs152a/simulator:latest done
+#13 DONE 0.0s
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Receiver running
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+Warning: sch_htb: quantum of class 10001 is small. Consider r2q change.
+  Throughput: 92617.4497946
+  Delay: 0.5456821
+
+=== Final Results ===
+  File "<stdin>", line 1
+    throughputs = [95984.0049183 93088.4307656 92572.9642363 80472.2353458 90704.5924230 84420.9330266 91032.5065135 92189.6444531 91610.5155210 92617.4497946]
+                                 ^
+SyntaxError: invalid syntax

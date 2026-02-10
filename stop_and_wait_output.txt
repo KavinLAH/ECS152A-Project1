@@ -1,0 +1,6 @@
+=== Iteration 1 of 10 ===
+Throughput: 6647.0921842
+Delay: 0.1533829
+=== Iteration 2 of 10 ===
+Throughput: 6758.9483126
+Delay: 0.1508629
