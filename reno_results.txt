@@ -1,0 +1,39 @@
+=== Iteration 1 of 10 ===
+Throughput: 95984.0049183
+Delay: 0.4374668
+
+=== Iteration 2 of 10 ==
+Throughput: 93088.4307656
+Delay: 0.8054448
+
+=== Iteration 3 of 10 ===
+Throughput: 92572.9642363
+Delay: 0.7335855
+
+=== Iteration 4 of 10 ===
+Throughput: 80472.2353458
+Delay: 0.5910531
+
+=== Iteration 5 of 10 ===
+Throughput: 90704.5924230
+Delay: 0.8169255
+
+=== Iteration 6 of 10 ===
+Throughput: 84420.9330266
+Delay: 0.3284899
+
+=== Iteration 7 of 10 ===
+Throughput: 91032.5065135
+Delay: 0.5524663
+
+=== Iteration 8 of 10 ===
+Throughput: 92189.6444531
+Delay: 0.5424035
+
+=== Iteration 9 of 10 ===
+Throughput: 91610.5155210
+Delay: 0.6242954
+
+== Iteration 10 of 10 ===
+Throughput: 92617.4497946
+Delay: 0.5456821
