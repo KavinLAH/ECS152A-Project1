@@ -1,0 +1,35 @@
+=== Iteration 1 of 10 ===
+Throughput: 95293.0542614
+Delay: 1.0630359
+=== Iteration 2 of 10 ===
+Throughput: 89526.6806184
+Delay: 1.1267021
+=== Iteration 3 of 10 ===
+Throughput: 87133.9665556
+Delay: 1.1496591
+=== Iteration 4 of 10 ===
+Throughput: 91901.2577859
+Delay: 1.1030875
+=== Iteration 5 of 10 ===
+Throughput: 86795.1487812
+Delay: 1.1277556
+=== Iteration 6 of 10 ===
+Throughput: 95114.6047865
+Delay: 1.0642153
+=== Iteration 7 of 10 ===
+Throughput: 89101.4763030
+Delay: 1.1341663
+=== Iteration 8 of 10 ===
+Throughput: 104638.9475468
+Delay: 0.9672187
+=== Iteration 9 of 10 ===
+Throughput: 85383.2888626
+Delay: 1.1877436
+=== Iteration 10 of 10 ===
+Throughput: 84069.4298885
+Delay: 1.1778132
+
+=== Final Results ===
+Avg Throughput: 90895.7855390
+Avg Delay: 1.1101397
+Performance Metric: 27.8992869
