@@ -5,7 +5,7 @@ UDP_PACKET_SIZE = 1024 # each udp packet is 1024 bytes total (header and payload
 SEQUENCE_ID_SIZE = 4 # sequence ID is 4 bytes
 MESSAGE_SIZE = UDP_PACKET_SIZE - SEQUENCE_ID_SIZE
 TIMEOUT = 0.5  # seconds - reduced for faster recovery
-NUM_ITERATIONS = 1  # Runner script handles the 10 iterations
+NUM_ITERATIONS = 10
 FILE_PATH = "project_1/2024_congestion_control_ecs152a/docker/file.mp3"
 RECEIVER_HOST = "localhost"
 RECEIVER_PORT = 5001
@@ -41,6 +41,7 @@ def send_file_stop_and_wait():
         packets.append((seq_id, data))
     
     # Create UDP socket
+    # utilzing the python socket library to establish a connection
     with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as udp_socket:
         udp_socket.settimeout(TIMEOUT)
         
@@ -62,7 +63,7 @@ def send_file_stop_and_wait():
                 
                 try:
                     # Wait for ACK
-                    ack_packet, _ = udp_socket.recvfrom(PACKET_SIZE)
+                    ack_packet, _ = udp_socket.recvfrom(UDP_PACKET_SIZE)
                     ack_id, _ = parse_ack(ack_packet)
                     
                     # Check if this is the ACK we're waiting for
@@ -86,7 +87,7 @@ def send_file_stop_and_wait():
             try:
                 # Wait for ACK and FIN
                 while True:
-                    ack_packet, _ = udp_socket.recvfrom(PACKET_SIZE)
+                    ack_packet, _ = udp_socket.recvfrom(UDP_PACKET_SIZE)
                     ack_id, message = parse_ack(ack_packet)
                     
                     # Check if it's a fin
