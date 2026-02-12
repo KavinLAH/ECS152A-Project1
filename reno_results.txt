@@ -37,3 +37,8 @@ Delay: 0.6242954
 == Iteration 10 of 10 ===
 Throughput: 92617.4497946
 Delay: 0.5456821
+
+=== Final Results ===
+Avg Throughput: 90469.3276998
+Avg Delay: 0.5977813
+Performance Metric: 28.3965228
