@@ -8,7 +8,7 @@ The implmentation of the Stop and Wait protocool was the easiest out of the thre
 
 The core idea of this protocol and how it is implemented in the code works as follows: the sender is going to tramsit one packet a time over a UDP socket and then it will be blocking until it recieves an ACK from the receiver. If the ACK is recieved within the window that we set for the timeout, then the sender will check if the ACK ID is greater than the current Sequence ID (as the reciever uses cumulative ACK's). If this all goes well, then the ACK will confirm the recepit of the specific packet and the sender will record the round-trip delay for the packet. It will repeat this process until all packets have been sent and acknowledged. If we don;t recieve an ACK before the timeout, then the sender will retransmit the same packet. 
 
-Once all of the data packets have been both sent and also acknowledged, then the sender will go into the connection teardown process. What happens here is that the sender will send an empty packet that will have a sequence ID which will be equal to the total file size. This is basically the sign of the end of transmission. Then the sender waits for the reciever to respond with a message of "fin", and once this is recieved, it will send a FINACK (final acknowledgement packet) and this completes the handshake. Furthemore, throughotu the the entire lifetime of the transmission, the sender is going to tracj the total elpased time and the per packet delays in order to calculate the throughput (which is the bytes per second) and also the average delay as well.
+Once all of the data packets have been both sent and also acknowledged, then the sender will go into the connection teardown process. What happens here is that the sender will send an empty packet that will have a sequence ID which will be equal to the total file size. This is basically the sign of the end of transmission. Then the sender waits for the reciever to respond with a message of "fin", and once this is recieved, it will send a FINACK (final acknowledgement packet) and this completes the handshake. Furthemore, throughotu the the entire lifetime of the transmission, the sender is going to tracj the total elapsed time and the per packet delays in order to calculate the throughput (which is the bytes per second) and also the average delay as well.
 
 The main key charateristic of this protocol is that there is only oing to be one packet ever in transmission at a time. Even though thi might seem goof and guarantees simplicity and also good reliability, this is very much underutilzing the netwrok bandwith as the sender is basically waiting for so lonf while waiting for each ACK. We made sure to utilize the python socket library to help us establish a UDP Connection and also the LLm helped us with the byte conversion functions such as `int.to_bytes()` and `.decode()`.
 
@@ -33,7 +33,7 @@ The main key charateristic of this protocol is that there is only oing to be one
 
 ### Output Screenshot
 
-> *Insert screenshot of stop-and-wait output here*
+![Stop-and-Wait Output](stop_and_wait_screenshot.png)
 
 ---
 
@@ -71,7 +71,7 @@ If we have no ACK's being recived during the non-blocking drain, then the sender
 
 ### Output Screenshot
 
-> *Insert screenshot of fixed sliding window output here*
+![Fixed Sliding Window Output](sliding_window_screenshot.png)
 
 ---
 
@@ -79,15 +79,13 @@ If we have no ACK's being recived during the non-blocking drain, then the sender
 
 ### Description
 
-###### STILL HAVE TO DECHAT THIS ENITRE PART
+The TCP Reno implementation is the most complicated one out of all three protocols, as it involves congestion control that dynamically adjusts the sending rate and the window based on network conditions and how much congestion and the feedback from the receiver. Unlike the Fixed Sliding Window which uses a fixed size window of 100 packets, TCP Reno starts with an initial congestion window (cwnd) size of just 1 packet and it grows based on the network conditions, using the phases the professor taught us in class: Slow Start, Congestion Avoidance, Fast Retransmit, and Fast Recovery.
 
-Our TCP Reno implementation is the most sophisticated of the three protocols, featuring adaptive congestion control that dynamically adjusts the sending rate based on network conditions. Unlike the Fixed Sliding Window which uses a static window of 100 packets, TCP Reno starts with a congestion window (cwnd) of just 1 packet and grows it based on feedback from the network, using the mechanisms we learned about in class: Slow Start, Congestion Avoidance, Fast Retransmit, and Fast Recovery.
+The first phase is slow start, where the congestion window increases exponentially. When an ACK is sent, then increment the window by 1 which doubles for every RTT. Slow start keeps happening until the the ssthresh is reached by the window. Then this triggers the Congestion Avoidance phase. What happens here is the window grows linearly where the cwnd increases by 1/cwnd for every ACK received. This ensures it does not exceed or waste so much bandwidth so it does not overflow the network with way too much traffic.
 
-During Slow Start, the congestion window grows exponentially — each time an ACK is received, cwnd increases by 1, which effectively doubles the window every round-trip time. This continues until cwnd reaches the slow start threshold (ssthresh), which is initially set to 64 packets. Once cwnd meets or exceeds ssthresh, the sender transitions to Congestion Avoidance, where the window grows linearly: cwnd increases by 1/cwnd for each ACK, meaning the window only grows by approximately 1 packet per round-trip time. This cautious approach probes for available bandwidth without overwhelming the network.
+The sender also tracks when it receives duplicate ACKs. When it receives three duplicate ACKs, then it thinks that the packet was lost or dropped. This moves onto Fast Retransmit phase. What happens here is instead of just waiting for a timeout, the sender immediately will retransmit the packet that was lost. At the same time, it transitions to Fast Recovery phase by setting ssthresh to half the current cwnd (minimum of 2) and setting cwnd to ssthresh + 3. (this considers the three duplicate ACKs). During Fast Recovery phase, each additional duplicate ACK received will increment cwnd by 1 to allow more packets to be sent. When a new ACK finally arrives, cwnd is goes back down to the ssthresh and the sender exits the Fast Recovery phase.
 
-The sender also tracks duplicate ACKs. When the same ACK is received three times, it indicates that a specific packet was likely lost while subsequent packets arrived successfully. This triggers Fast Retransmit: instead of waiting for a timeout, the sender immediately retransmits the lost packet. Simultaneously, it enters Fast Recovery by setting ssthresh to half the current cwnd (minimum of 2) and setting cwnd to ssthresh + 3 (accounting for the three duplicate ACKs that indicated packets in the pipeline). During Fast Recovery, each additional duplicate ACK inflates cwnd by 1 to allow more new data to be sent. When a new (non-duplicate) ACK finally arrives, cwnd is deflated back to ssthresh and the sender exits Fast Recovery.
-
-The most drastic response occurs on a timeout. If no ACK arrives within 0.5 seconds, the sender assumes severe congestion: ssthresh is set to half the current cwnd, cwnd is reset all the way to 1, and all packets in the current window are retransmitted (Go-Back-N). This effectively restarts Slow Start from scratch, which is harsh but necessary to relieve congestion. The connection teardown and metric calculations are identical to the other protocols. We utilized the Python socket library for the UDP connection and the formulas we learned in class for the congestion control mechanisms.
+The most drastic response happens on timeouts. If an ACK isn't received in 0.5 seconds of sending the packet then it thinks the network has way too much congestion. What happens here it will set the ssthresh to half of the congestion window, then reset congestion window back to 1, and resend all of the packet in the current window (Go-Back-N). Now we go back to Slow Start. To calculate the metrics, we followed the ones we did for other protocols. Finally in setting up our connection, we used the builtin socket library and applied all formulas learned in class.
 
 ### Results Table
 
@@ -108,7 +106,7 @@ The most drastic response occurs on a timeout. If no ACK arrives within 0.5 seco
 
 ### Output Screenshot
 
-> *Insert screenshot of TCP Reno output here*
+![TCP Reno Output](tcp_reno_screenshot.png)
 
 ---
 
@@ -125,3 +123,20 @@ The most drastic response occurs on a timeout. If no ACK arrives within 0.5 seco
 - **Stop-and-Wait** has the lowest throughput (~6.7 KB/s) due to only allowing one packet in flight at a time, but also has the lowest per-packet delay (~0.15s) since there is no queuing.
 - **Fixed Sliding Window** achieves ~13.5x higher throughput than Stop-and-Wait by pipelining up to 100 packets, but has the highest per-packet delay (~1.1s) because many packets are queued in the window.
 - **TCP Reno** achieves comparable throughput to Fixed Sliding Window while cutting the per-packet delay nearly in half (~0.6s), resulting in the best overall performance metric. Its adaptive congestion window avoids overwhelming the network, leading to fewer retransmissions and better delay characteristics.
+
+## Submission Certification
+
+I certify that all submitted work is my own work. I have completed all of the assignments on my own without assistance from others except as indicated by appropriate citation. I have read and understand the university policy on plagiarism and academic dishonesty.
+
+**Team Member 1 Contributions**: Worked on the TCP Reno part of report and the algorithm. Collaborated with Raq on the code for Sliding Window and Stop and Wait.
+
+| Kavin Agarwal| KA | 2/12/2026 |
+|-----------|-----------|------|
+| | | |
+
+**Team Member 2 Contributions**: Worked on the Stop and Wait and Sliding Window part of the report and the algorithm. Collaborated with Kavin on the code for TCP Reno.
+
+| Raquib Alam | RA | 2/12/2026 |
+|-----------|-----------|------|
+| | | |
+
